@@ -13,7 +13,7 @@ For experiments on irregular-asynchronous data like MVSEC (dataloader 3), the `a
 For training, the config has to be defined that contains all training parameters. A more detailed explanation of the config parameters can be found in the README in the /config folder.
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python train.py --config configs/train_e2depth_si_grad_loss_statenet_ergb.json `
+CUDA_VISIBLE_DEVICES=0 python train.py --config configs/train_e2depth_si_grad_loss_statenet_ergb.json
 ```
 
 If a training should be started with an initial checkpoint it can be added as follows:
