@@ -93,10 +93,9 @@ def main(config, initial_checkpoint, output_folder, data_folder):
 
     dataset_type['validation'] = config['data_loader']['validation']['type']
     # change path here if test.py needs to be run on validation or training data
-    if data_folder is not None:
-        base_folder['validation'] = join(preprocessed_datasets_folder, data_folder)
-    else:
-        base_folder['validation'] = join(preprocessed_datasets_folder, 'dataset_mathias_23_07/test/')
+    '''test data_folder setting'''
+    base_folder['validation'] = join(preprocessed_datasets_folder, data_folder)
+   
 
     event_folder['validation'] = config['data_loader']['validation']['event_folder']
     depth_folder['validation'] = config['data_loader']['validation']['depth_folder']
