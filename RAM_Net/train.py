@@ -9,7 +9,7 @@ from model.metric import *
 from torch.utils.data import DataLoader, ConcatDataset
 from data_loader.dataset import *
 from trainer.lstm_trainer import LSTMTrainer
-from trainer.trainer_no_recurrent import TrainerNoRecurrent
+#from trainer.trainer_no_recurrent import TrainerNoRecurrent
 from utils.data_augmentation import Compose, RandomRotationFlip, RandomCrop, CenterCrop
 from os.path import join
 import bisect
@@ -48,7 +48,8 @@ def concatenate_subfolders(base_folder, dataset_type, event_folder, depth_folder
 
     train_datasets = []
     for dataset_name in subfolders:
-        train_datasets.append(eval(dataset_type)(base_folder=join(base_folder, dataset_name),
+        print('-------------------:',join(base_folder))
+        train_datasets.append(eval(dataset_type)(base_folder=base_folder,   # join(base_folder, dataset_name),
                                                  event_folder=event_folder,
                                                  depth_folder=depth_folder,
                                                  frame_folder=frame_folder,
