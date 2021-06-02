@@ -19,7 +19,7 @@ You can find a pdf of the paper
   year          = 2021
 }
 ```
-ljw  
+
 If you use the event-camera plugin go to [CARLA](https://carla.readthedocs.io/en/latest/ref_sensors/#dvs-camera), please cite the following publication:
 
 ```bibtex
